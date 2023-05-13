@@ -5,9 +5,9 @@ const Todolist = () => {
     return (
         <ul>
             {
-                todoList.map((todo, index) => (
-                    <li key={index}>{todo}
-                        <button onClick={()=>removeTodo(index)} > delete</button>
+                todoList.map((todo,) => (
+                    <li key={todo.id}>{todo.text}
+                        <button onClick={()=>removeTodo(todo.id)} > delete</button>
                     </li>
                 ))
             }
